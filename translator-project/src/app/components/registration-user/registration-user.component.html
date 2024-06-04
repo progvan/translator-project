@@ -1,0 +1,18 @@
+<div class="container mt-4">
+  <div class="alert alert-warning alert-dismissible fade show" role="alert" *ngIf="alert">
+    {{ alert }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" (click)="closeAlert()"></button>
+  </div>
+  <form [formGroup]="addUser" (ngSubmit)="SaveUserData()">
+      <div class="mb-4">
+        <input type="text" class="form-control" placeholder="Enter your nickname" formControlName="nickname">
+      </div>
+      <div class="mb-4">
+        <input type="password" class="form-control" placeholder="Enter your password" formControlName="password">
+      </div>
+      <div class="mb-4">
+        <input type="password" placeholder="Repeat your password" formControlName="repeatPassword" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Sign up</button>
+    </form>
+</div>

@@ -1,0 +1,19 @@
+<!--Header-->
+<nav class="navbar navbar-expand-lg bg-primary-subtle border border-primary border-3">
+  <div class="container-fluid">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item"><a [routerLink]="['/']" class="fs-1 text-white text-primary-emphasis text-decoration-none select-none">YourEng.</a></li>
+    </ul>
+    <ul class="navbar-nav ms-auto gap-3 fs-5 me-2">
+      <ng-container *ngIf="!userId">
+        <li class="nav-item"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover select-none text-primary-emphasis" routerLink="login">Login User</a></li>
+        <li class="nav-item"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover select-none text-primary-emphasis" routerLink="registration">Register User</a></li>
+      </ng-container>
+      <ng-container *ngIf="userId">
+        <p class="text-primary-emphasis">{{userNickname}}</p>
+        <li class="nav-item"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover select-none text-primary-emphasis" (click)="logout()">Logout</a></li>
+      </ng-container>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>

@@ -1,0 +1,75 @@
+{
+  "words": [
+    {
+      "id": "32",
+      "word": "чому так важко",
+      "translate": "why so hard",
+      "study_priority": "For later",
+      "id_user": "2"
+    },
+    {
+      "id": "36",
+      "word": "пока",
+      "translate": "Bye",
+      "study_priority": "For later",
+      "id_user": "1"
+    },
+    {
+      "word": "привіт",
+      "translate": "Hello",
+      "study_priority": "The most important",
+      "id_user": "1",
+      "id": "38"
+    },
+    {
+      "id": "50",
+      "word": "あなたの名前は何ですか",
+      "translate": "What is your name",
+      "study_priority": "Importantly",
+      "id_user": "1"
+    },
+    {
+      "id": "51",
+      "word": "qwe",
+      "translate": "qwe",
+      "study_priority": "Importantly",
+      "id_user": "4"
+    },
+    {
+      "word": "Comment vas tu",
+      "translate": "How are you",
+      "study_priority": "Already",
+      "id_user": "5",
+      "id": "53"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "nickname": "retery",
+      "password": "qweqwrt"
+    },
+    {
+      "id": "2",
+      "nickname": "reteryryty",
+      "password": "qweqwrt"
+    },
+    {
+      "id": "3",
+      "nickname": "reterytyty",
+      "password": "qweqwrt"
+    },
+    {
+      "id": "4",
+      "nickname": "qwe",
+      "password": "qwe",
+      "repeatPassword": "qwe"
+    },
+    {
+      "id": "5",
+      "nickname": "Ivan",
+      "password": "qwe",
+      "repeatPassword": "qwe"
+    }
+  ]
+}

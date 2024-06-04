@@ -1,0 +1,51 @@
+.modal-bg-black-transparent {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.button-group{
+  display: none;
+}
+
+.card-fixed {
+  width: 100%;
+  width: 200px;
+  height: 200px; 
+  perspective: 1000px;
+}
+
+.card {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  perspective: 1000px; 
+  cursor: pointer;
+}
+
+.card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s; 
+  transform-style: preserve-3d; 
+}
+
+.card.is-flipped .card-inner {
+  transform: rotateY(180deg); 
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; 
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.select-none {
+  user-select: none;
+}
+
+

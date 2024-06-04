@@ -1,0 +1,7 @@
+.select-none {
+    user-select: none;
+}
+
+.router-outlet {
+    flex: 1 0 auto; 
+  }

@@ -1,0 +1,33 @@
+<div class="container">
+  <h3>Edit word</h3>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert" *ngIf="alert">
+    {{ alert }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" (click)="closeAlert()"></button>
+  </div>
+  <form [formGroup]="editWord" (ngSubmit)="UpdateData()">
+    <div class="mb-3">
+      <input placeholder="Enter your word" type="text" class="form-control" formControlName="word" [(ngModel)]="inputText" (click)="closeButtons()">
+    </div>
+    <div class="mb-3">
+      <label for="select_priority" class="text-black fs-6">Choose a priority for studying this word</label>
+      <select id="select_priority" class="form-select form-select-lg" formControlName="study_priority" aria-label="Floating label select example">
+        <option class="text-black bg-danger">The most important</option>
+        <option class="text-black bg-primary">Importantly</option>
+        <option class="text-black bg-info">Neutral</option>
+        <option class="text-white bg-black">For later</option>
+        <option class="text-white bg-black">Already</option>
+      </select>
+    </div>
+    <button type="button" class="btn btn-primary w-100" (click)="translate()">Update</button>
+    <div class="button-group mt-3 justify-content-center align-items-center gap-3" #buttonGroup>
+      <div class="text_block">
+          <p class="text-black f6">All right?</p>
+      </div>
+      <button type="submit" class="btn btn-success">Yes</button>
+      <button type="button" class="btn btn-danger" (click)="closeButtons()">No</button>
+    </div>
+    <div class="mb-3 mt-3">
+      <textarea placeholder="The translation of your word/phrase will be displayed here" formControlName="translate" class="form-control h-100 w-100" id="transled-text" name="translated-text" [(ngModel)]="translatedText" readonly></textarea>
+    </div>
+    </form>
+</div>
